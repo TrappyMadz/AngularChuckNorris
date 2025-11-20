@@ -1,0 +1,22 @@
+img {
+  height: 35px;
+  background-color: #5a5a5a;
+  padding: 5px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+img:hover {
+  background-color: #3f3e3e;
+}
+
+input {
+  padding: 15px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+}

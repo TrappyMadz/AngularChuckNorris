@@ -1,0 +1,9 @@
+<div class="jokeList">
+  <div class="text">
+    <img src="assets/Bubble.png" class="Bubble" />
+    <ng-container *ngIf="joke$ | async as joke">
+      <p>{{ joke }}</p>
+    </ng-container>
+  </div>
+  <img src="assets/Norris.png" class="Norris" />
+</div>

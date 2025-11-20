@@ -1,0 +1,9 @@
+<div class="SearchBar">
+  <input
+    type="text"
+    (keyup.enter)="fetchSearchJoke($event.target.value)"
+    placeholder="Search for a joke"
+    #searchTerm
+  />
+  <img src="assets/Loupe.png" (click)="fetchSearchJoke(searchTerm.value)" />
+</div>
