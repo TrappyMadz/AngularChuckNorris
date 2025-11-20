@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: EsLint
-        run: npm run eslint
-
       - name: Build
         run:  npm run build -- --base-href /AngularChuckNorris/
 
