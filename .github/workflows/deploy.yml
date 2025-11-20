@@ -22,12 +22,13 @@ jobs:
         run: npm install
 
       - name: Build
-        run:  npm run build -- --base-href /AngularChuckNorris/
+        # 1. CORRECTION : Utiliser le nom du dépôt et le chemin de sortie correct.
+        run: npm run build -- --base-href /AngularChuckNorris/
 
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/AngularChuckNorris
-        
-    
+          # 2. CORRECTION : Adapter le chemin 'publish_dir' en fonction du nom du dossier de sortie.
+          #    En se basant sur la convention Angular récente et vos fichiers :
+          publish_dir: ./dist/norris/browser
